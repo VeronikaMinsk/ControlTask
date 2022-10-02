@@ -14,3 +14,6 @@ void ResultArray(string[] array1, string[] array2)
             }
     }
 }
+Console.WriteLine("[{0}]", string.Join(", ", array1));
+Console.WriteLine("\nСформированный массив согласно условию задачи:");
+Console.WriteLine("[{0}]\n", string.Join(", ", array2.Where(s => !string.IsNullOrEmpty(s))));
